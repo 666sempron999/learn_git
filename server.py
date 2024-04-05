@@ -2,7 +2,13 @@ import socket
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-s.bind(("", 1000))
+s.bind(("", 10000))
+s.bind(("", 10000))
+s.bind(("", 10000))
+s.bind(("", 10000))
+s.listen(1)
+s.listen(1)
+s.listen(1)
 s.listen(1)
 
 connection, address = s.accept()
